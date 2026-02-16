@@ -10,6 +10,7 @@ Whether you're drafting a dissertation, preparing a conference paper, or typeset
 - [TeX Distributions](#tex-distributions)
 - [Containerized Environments](#containerized-environments)
 - [Typesetting Engines](#typesetting-engines)
+  - [Modern Alternatives](#modern-alternatives)
   - [Math on the Web](#math-on-the-web)
 - [Writing Environments](#writing-environments)
   - [Dedicated LaTeX Editors](#dedicated-latex-editors)
@@ -65,17 +66,21 @@ The engine decides how your `.tex` source becomes a finished document.
 - [pdfTeX](https://www.tug.org/applications/pdftex/) — The workhorse engine that outputs PDF directly. Default choice for most users today.
 - [XeTeX](http://xetex.sourceforge.net) — Unlocks system fonts and full Unicode support — ideal for multilingual documents.
 - [LuaTeX](https://www.luatex.org) — Embeds a Lua scripting layer alongside modern Unicode and font handling.
-- [tectonic](https://tectonic-typesetting.GitHub.io/en-US/) — A modern, self-contained engine built on XeTeX and TeXLive. No fiddling with installations.
+- [tectonic](https://tectonic-typesetting.github.io/en-US/) — A modern, self-contained engine built in Rust on XeTeX and TeXLive. Auto-downloads packages on demand.
+
+### Modern Alternatives
+
+Tools that reimagine scientific typesetting beyond the traditional TeX workflow.
+
+- [Typst](https://typst.app) ([GitHub](https://github.com/typst/typst)) — A markup-based typesetting system designed as a modern replacement for LaTeX. Compiles in milliseconds, produces clean PDFs, and has a growing package ecosystem. Most journals still require `.tex` submissions, but Typst is an excellent choice for theses, internal reports, and preprints.
 
 ### Math on the Web
 
 Render LaTeX-quality equations outside of PDF.
 
-- [Auto-LaTeX Equations with Google Docs](https://sites.google.com/site/autolatexequations) — Drop high-fidelity math equations straight into Google Docs.
 - [MathJax](https://www.mathjax.org) — The gold-standard JavaScript library for rendering math in browsers. Crisp output everywhere.
-- [mimeTeX](https://ctan.org/pkg/mimetex) — Old-school CGI tool that turns LaTeX into PNG without needing a server-side TeX install.
-- [mathTeX](https://ctan.org/pkg/mathtex) — Successor to mimeTeX with higher-quality output (requires a TeX installation on the server).
-- [KaTeX](https://khan.GitHub.io/KaTeX/) — Khan Academy's lightning-fast math renderer. Outputs pure HTML — no images.
+- [KaTeX](https://khan.github.io/KaTeX/) — Khan Academy's lightning-fast math renderer. Outputs pure HTML — no images.
+- [Auto-LaTeX Equations with Google Docs](https://sites.google.com/site/autolatexequations) — Drop high-fidelity math equations straight into Google Docs.
 - [Franklin.jl](https://franklinjl.org/) — Julia-powered static site generator with native KaTeX, code evaluation, and LaTeX-like commands.
 - [xhub](https://github.com/nschloe/xhub) — Browser extension that activates LaTeX rendering on GitHub pages.
 
@@ -83,75 +88,71 @@ Render LaTeX-quality equations outside of PDF.
 
 Life's too short to typeset in Notepad. Here are the best places to write LaTeX.
 
-A broader community-maintained catalogue lives at [tex.stackexchange.com](https://tex.stackexchange.com/q/339/9075).
-
 ### Dedicated LaTeX Editors
 
 Purpose-built for `.tex` files.
 
+- [TeXStudio](https://www.texstudio.org) — The most actively developed open-source LaTeX IDE. Rich autocompletion, integrated viewer, and custom build commands.
+- [TeXMaker](https://www.xm1math.net/texmaker/) — Solid cross-platform editor with an integrated PDF viewer and real-time preview.
 - [Kile](https://kile.sourceforge.io) — Feature-rich editor born on KDE/Linux that also runs well on Windows and macOS.
-- [TeXMaker](https://www.xm1math.net/texmaker/) — Solid cross-platform editor, a well-regarded Kile alternative.
-- [TeXStudio](https://www.texstudio.org) — Fork of TeXMaker with extra features and active development.
-- [WinEdt](https://www.winedt.com) — A beloved editor with a devoted following (Windows).
-- [TeXnicCenter](https://www.texniccenter.org) — Venerable free editor that still gets the job done (Windows).
 - [LyX](https://www.lyx.org) — A WYSIWYM front-end: you write structured content, LaTeX handles the typesetting behind the scenes.
+- [Texifier](https://www.texifier.com/) — Polished commercial editor for Apple platforms with document outlines, synced PDF, and device sync (macOS).
+- [WinEdt](https://www.winedt.com) — A beloved editor with a devoted following (Windows).
 - [TeXShop](https://pages.uoregon.edu/koch/texshop/) — Clean, no-frills editor bundled with MacTeX (macOS).
 - [TeXWorks](https://www.tug.org/texworks/) — Minimalist cross-platform editor inspired by TeXShop.
-- [BakomaTex](https://www.bakoma-tex.com) — Commercial editor offering simultaneous source and WYSIWYG views.
-- [Texifier](https://www.texifier.com/) — Polished commercial editor for Apple platforms with document outlines, synced PDF, and device sync (macOS).
 
 ### Multipurpose Code Editors
 
 General-purpose editors that handle LaTeX alongside everything else.
-
-- [Atom](https://atom.io)
-  - [LaTeXTools](https://atom.io/packages/latextools) — Port of the popular Sublime Text plugin.
-
-- [Sublime Text](https://www.sublimetext.com)
-  - [LaTeXing](https://github.com/LaTeXing/LaTeXing) — Free editing plugin for LaTeX workflows.
-  - [LaTeXTools](https://github.com/SublimeText/LaTeXTools) — Well-maintained free LaTeX plugin.
-
-- [Emacs](https://www.gnu.org/software/emacs/)
-  - [AUCTeX](https://www.gnu.org/software/auctex/) — The definitive Emacs LaTeX mode — includes equation and figure previews.
-  - [RefTeX](https://www.gnu.org/software/auctex/reftex) — Companion to AUCTeX for managing labels, references, and citations.
-
-- [Vim](https://www.vim.org)
-  - [Vim-LaTeX](http://vim-latex.sourceforge.net)
-  - [LaTeX Live Preview](https://github.com/xuhdev/vim-latex-live-preview) — Watch your document update in real time as you type.
-  - [vimtex](https://github.com/lervag/vimtex) — Modern Vim plugin with live preview, forward search, and much more.
-
-- [IntelliJ](https://www.jetbrains.com/idea/)
-  - [TeXiFy-IDEA](https://github.com/Hannah-Sten/TeXiFy-IDEA) — Full-featured free LaTeX support inside any JetBrains IDE.
 
 - [VS Code](https://code.visualstudio.com/)
   - [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) — Rich LaTeX extension with build automation, preview, and IntelliSense.
   - [LTeX](https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex) — Grammar and spell checking powered by LanguageTool.
   - [a-nau/latex-devcontainer](https://github.com/a-nau/latex-devcontainer) — Dev Container config for zero-install LaTeX editing.
 
+- [Zed](https://zed.dev)
+  - [LaTeX extension](https://zed.dev/extensions/latex) — Syntax highlighting and language server support. Auto-compile on save with live preview.
+  - [TeXpresso](https://zed.dev/extensions/texpresso) — Live preview of LaTeX documents inside the editor.
+
+- [Vim](https://www.vim.org) / [Neovim](https://neovim.io)
+  - [vimtex](https://github.com/lervag/vimtex) — The definitive Vim/Neovim LaTeX plugin. Compilation, live preview, forward/inverse search, and much more.
+
+- [Emacs](https://www.gnu.org/software/emacs/)
+  - [AUCTeX](https://www.gnu.org/software/auctex/) — The definitive Emacs LaTeX mode — includes equation and figure previews.
+  - [RefTeX](https://www.gnu.org/software/auctex/reftex) — Companion to AUCTeX for managing labels, references, and citations.
+
+- [Sublime Text](https://www.sublimetext.com)
+  - [LaTeXTools](https://github.com/SublimeText/LaTeXTools) — Well-maintained free LaTeX plugin with build and preview support.
+
+- [IntelliJ](https://www.jetbrains.com/idea/)
+  - [TeXiFy-IDEA](https://github.com/Hannah-Sten/TeXiFy-IDEA) — Full-featured free LaTeX support inside any JetBrains IDE.
+
+- [texlab](https://github.com/latex-lsp/texlab) — Language Server Protocol implementation for LaTeX. Works with any LSP-capable editor.
+
 ### Browser-Based Editors
 
 Write and compile from any device with a browser.
 
-- [Popular online LaTeX editors](https://tex.stackexchange.com/questions/3/compiling-documents-online/1654#1654) — Community-curated comparison of online editors and equation tools.
-- [Authorea](https://www.authorea.com) — Collaborative writing platform with integrated version control and references.
-- [Crixet](https://app.crixet.com) — Real-time collaborative LaTeX editor.
-- [Modern LaTeX Editor](https://github.com/InMDev/Modern-LaTeX-Editor) — Hybrid editor blending Notion-style visual editing with raw LaTeX blocks.
-- [Octree](https://useoctree.com) — AI-assisted online LaTeX editor.
-- [Overleaf](https://www.overleaf.com) — The most widely used online LaTeX platform. Supports visual editing and git sync.
+- [Overleaf](https://www.overleaf.com) — The most widely used online LaTeX platform. Supports visual editing, real-time collaboration, and git sync.
   - [olcli](https://github.com/aloth/olcli) — CLI companion for Overleaf: sync, manage, and compile from your terminal.
-- [WebLaTeX](https://github.com/sanjib-sen/weblatex) — VS Code in the browser via GitHub Codespaces with Git, Copilot, and live collaboration.
+  - [Underleaf](https://www.underleaf.ai/) — AI-powered Chrome extension for Overleaf that adds smart writing assistance, equation OCR, and dark mode.
+- [Prism](https://prism.openai.com/) — Free AI-native LaTeX workspace by OpenAI. Project-aware AI assistance, image-to-LaTeX conversion, and unlimited collaborators.
+- [CoCalc](https://cocalc.com/features/latex-editor) — Online LaTeX editor with real-time collaboration, embedded computation (Python, Sage, R), and full version history.
+- [Octree](https://useoctree.com) — AI-assisted online LaTeX editor with intelligent autocomplete and error detection.
+- [Authorea](https://www.authorea.com) — Collaborative writing platform with integrated version control and references.
+- [SpicyChai LaTeX](https://latex.spicychai.com) — Online LaTeX editor with AI writing assistance, real-time PDF preview, and templates for papers, theses, and presentations.
 - [Papeeria](https://papeeria.com) — Online editor with built-in version control.
-- [JaxEdit](https://zohooo.GitHub.io/jaxedit/) — Lightweight browser editor with live preview and presentation mode.
-- [Vexlio](https://vexlio.com/) — Diagram editor with native LaTeX equation support and easy export.
+- [WebLaTeX](https://github.com/sanjib-sen/weblatex) — VS Code in the browser via GitHub Codespaces with Git, Copilot, and live collaboration.
+- [JaxEdit](https://zohooo.github.io/jaxedit/) — Lightweight browser editor with live preview and presentation mode.
 
 ## Citation & Bibliography Management
 
 Taming your references so you don't have to.
 
+- [Zotero](https://www.zotero.org) — Captures references from your browser, syncs across devices, and exports to BibTeX. The most popular free option.
 - [JabRef](https://www.jabref.org) — Powerful open-source BibTeX manager. Runs everywhere Java does.
 - [Papis](https://github.com/papis/papis) — Highly scriptable, command-line-first library manager in Python. Multiple GUIs available.
 - [BibDesk](http://bibdesk.sourceforge.net) — Native macOS bibliography editor that integrates tightly with the system.
-- [Zotero](https://www.zotero.org) — Captures references from your browser, syncs across devices, and exports to BibTeX.
 - [Mendeley](https://www.mendeley.com) — Reference manager and PDF organizer with cloud sync and BibTeX export.
 - [betterbib](https://github.com/nschloe/betterbib) — CLI tool that cleans up and enriches your `.bib` files using online databases.
 - [OneCite](https://github.com/HzaCode/OneCite) — All-in-one citation toolkit: feed it a DOI, arXiv ID, or title and get BibTeX, APA, or MLA output.
@@ -160,8 +161,9 @@ Taming your references so you don't have to.
 
 Automate the tedious compile-recompile-compile cycle.
 
-- [Arara](https://www.ctan.org/pkg/arara) ([GitHub](https://github.com/islandoftex/arara)) — Declare build steps inside your document. Easy to extend.
 - [latexmk](https://www.ctan.org/pkg/latexmk) — The de facto standard build tool, used under the hood by most editors.
+- [Arara](https://www.ctan.org/pkg/arara) ([GitHub](https://github.com/islandoftex/arara)) — Declare build steps inside your document. Easy to extend.
+- [tectonic](https://tectonic-typesetting.github.io/en-US/) — Also functions as a build tool: auto-downloads packages, determines the right number of compilation passes, and produces reproducible builds.
 
 ### CI/CD for LaTeX
 
@@ -170,8 +172,8 @@ Automate the tedious compile-recompile-compile cycle.
 
 ## Utilities & Helpers
 
-- [CaTeX](https://github.com/Alexis-benoist/CaTeX) — Merges multiple LaTeX files into one, intelligently combining preambles.
 - [Pandoc](https://pandoc.org) — The Swiss Army knife of document conversion: LaTeX, Word, Markdown, HTML, and dozens more.
+- [CaTeX](https://github.com/Alexis-benoist/CaTeX) — Merges multiple LaTeX files into one, intelligently combining preambles.
 
 ### Linting & Quality Checks
 
@@ -181,27 +183,26 @@ Automate the tedious compile-recompile-compile cycle.
 
 ### Equation-Focused Tools
 
+- [Mathpix](https://mathpix.com) — Industry-leading OCR for math, tables, and scientific notation. Converts images and PDFs to LaTeX, Markdown, or DOCX.
+- [pix2tex](https://lukas-blecher.github.io/LaTeX-OCR/) — Open-source OCR that reads math from images and outputs LaTeX code.
+- [Image to LaTeX](https://www.underleaf.ai/tools/image-to-latex) — AI-driven converter for handwritten notes, equations, and tables.
 - [Codecogs Eqn Editor](https://editor.codecogs.com/) — Point-and-click online equation editor that exports images.
-- [EqualX](https://equalx.sourceforge.io/) — Desktop GUI for composing equations.
-- [KLaTeXFormula](https://klatexformula.sourceforge.io) — Cross-platform equation-to-image converter.
-- [Laeqed](https://www.thrysoee.dk/laeqed/) — Turns LaTeX formulas into PNG files on any platform.
-- [LaTeXEqEdit](http://latexeqedit.sourceforge.net/) — Lightweight Windows equation editor.
 - [LaTeXiT](https://www.chachatelier.fr/latexit/) — Drag rendered equations (PDF, PNG) into any Mac app.
 - [LaTeX to Image](https://thomasahle.com/latex2png/) — Online converter: LaTeX to PNG, JPEG, or SVG. Includes a symbol palette.
-- [pix2tex](https://lukas-blecher.github.io/LaTeX-OCR/) — OCR that reads math from images and outputs LaTeX code.
-- [Image to LaTeX](https://www.underleaf.ai/tools/image-to-latex) — AI-driven converter for handwritten notes, equations, and tables.
+- [EqualX](https://equalx.sourceforge.io/) — Desktop GUI for composing equations.
+- [KLaTeXFormula](https://klatexformula.sourceforge.io) — Cross-platform equation-to-image converter.
 
 ## Visual & GUI Tools for LaTeX
 
 Draw diagrams and figures with LaTeX-native output.
 
-- [TikzEdt](https://www.tikzedt.org) ([GitHub](https://github.com/hchapman/tikzedt)) — Side-by-side WYSIWYG and code editor for TikZ.
-- [TikZ-Editor](https://github.com/fredokun/TikZ-Editor) — Live-preview editor for TikZ figures.
 - [IPE](https://ipe.otfried.org) — Precision drawing tool designed around LaTeX text integration.
 - [GeoGebra](https://www.geogebra.org/) — Interactive geometry app that can export directly to TikZ.
-- [Dia](https://wiki.gnome.org/Apps/Dia) — General-purpose diagramming tool with PSTricks and MetaPost export.
-- [TikZiT](https://tikzit.GitHub.io) — Lightweight GUI for creating PGF/TikZ graphs and string diagrams.
+- [TikZiT](https://tikzit.github.io) — Lightweight GUI for creating PGF/TikZ graphs and string diagrams.
+- [TikzEdt](https://www.tikzedt.org) ([GitHub](https://github.com/hchapman/tikzedt)) — Side-by-side WYSIWYG and code editor for TikZ.
 - [LaTeXDraw](https://latexdraw.sourceforge.net/) — Vector drawing application that treats LaTeX as a first-class output format.
+- [Dia](https://wiki.gnome.org/Apps/Dia) — General-purpose diagramming tool with PSTricks and MetaPost export.
+- [Vexlio](https://vexlio.com/) — Diagram editor with native LaTeX equation support and easy export.
 
 ## Package Ecosystem
 
@@ -209,13 +210,12 @@ Draw diagrams and figures with LaTeX-native output.
 
 ### Cross-References
 
-- [Cross-reference packages explained](https://tex.stackexchange.com/a/36312/9075) — Detailed comparison of cleveref, varioref, theoremref, nameref, and friends.
 
 ### Tables & Tabular Data
 
+- [Tables Generator](https://www.tablesgenerator.com) — Visual web app: design your table, copy out the LaTeX (or Markdown, or HTML).
 - [Excel2LaTeX](https://www.ctan.org/pkg/excel2latex?lang=en) — Macro that converts Excel spreadsheets into LaTeX `tabular` code.
 - [csv2latex](http://freshmeat.sourceforge.net/projects/csv2latex) — CLI tool that transforms CSV files into LaTeX tables.
-- [Tables Generator](https://www.tablesgenerator.com) — Visual web app: design your table, copy out the LaTeX (or Markdown, or HTML).
 - [pgfplotstable](https://www.ctan.org/pkg/pgfplotstable?lang=en) — Package for rendering data tables with configurable formatting — reads CSV natively.
 
 ### Figures & Diagrams
@@ -228,14 +228,14 @@ A mature library for generating publication-quality figures within PostScript an
 
 The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly with `pdflatex`.
 
-- [TeXample](https://www.texample.net) — Huge gallery of TikZ examples with source code.
-- [LaTeX en SI](https://sciences-indus-cpge.papanicola.info/-LaTeX-en-SI-) — Specialized TikZ packages for Bode plots, Nyquist diagrams, circuit schematics, and block diagrams (French).
 - [pgfplots](http://pgfplots.sourceforge.net) — Feature-rich plotting library in the TikZ style. Reads CSV and computes on the fly.
+- [TeXample](https://www.texample.net) — Huge gallery of TikZ examples with source code.
 - [A very minimal introduction to TikZ (PDF)](https://cremeronline.com/LaTeX/minimaltikz.pdf) — Concise starter guide by Jacques Crémer.
 - [PetarV-/TikZ](https://github.com/PetarV-/TikZ) — Gallery of publication-ready PGF/TikZ figures.
 - [matlab2tikz](https://github.com/matlab2tikz/matlab2tikz) — Export MATLAB plots as PGFPlots/TikZ.
 - [tikzplotlib](https://github.com/nschloe/tikzplotlib) — Export matplotlib figures as PGFPlots/TikZ.
 - [TikZBlog](https://latexdraw.com) — Step-by-step drawing tutorials for TikZ.
+- [LaTeX en SI](https://sciences-indus-cpge.papanicola.info/-LaTeX-en-SI-) — Specialized TikZ packages for Bode plots, Nyquist diagrams, circuit schematics, and block diagrams (French).
 
 ### Code Listings
 
@@ -258,8 +258,8 @@ The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly wit
 
 ## Symbol Lookup
 
-- [Comprehensive LaTeX Symbol List](https://www.ctan.org/tex-archive/info/symbols/comprehensive/) — Exhaustive reference of every symbol available in LaTeX. ([A4 PDF](https://mirrors.ctan.org/info/symbols/comprehensive/symbols-a4.pdf) | [Letter PDF](https://mirrors.ctan.org/info/symbols/comprehensive/symbols-letter.pdf))
 - [Detexify](https://detexify.kirelabs.org/classify.html) — Sketch a symbol with your mouse and get the LaTeX command back instantly.
+- [Comprehensive LaTeX Symbol List](https://www.ctan.org/tex-archive/info/symbols/comprehensive/) — Exhaustive reference of every symbol available in LaTeX. ([A4 PDF](https://mirrors.ctan.org/info/symbols/comprehensive/symbols-a4.pdf) | [Letter PDF](https://mirrors.ctan.org/info/symbols/comprehensive/symbols-letter.pdf))
 
 ## Community & Reference Material
 
@@ -270,16 +270,12 @@ The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly wit
 - [Visual FAQ](https://ctan.org/pkg/visualfaq) — See a formatting problem, click it, and get the TeX FAQ solution.
 - [MartinThoma's LaTeX examples](https://github.com/MartinThoma/LaTeX-examples/) — Repository of sample documents covering many scenarios.
 - [LaTeX Community Forum](https://latex.org/forum) — Active discussion board for Q&A and tips.
-- [Neue TeX FAQ](https://texfragen.de) — Up-to-date TeX FAQ in German.
 - [BibTeX Style Examples](http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html) — Side-by-side output of popular `.bst` bibliography styles.
 - [TeX World](https://tex.world/) — Portal supported by TUG, DANTE, and GUTenberg.
 - [TeXnique](https://texnique.xyz) — Test your LaTeX skills with this typesetting game.
 
 ## Eye Candy & Showcases
 
-- [Beautiful Typography in TeX](https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends) — Community showcase of stunning TeX-produced documents.
-- [Beautiful Invitations in TeX](https://tex.stackexchange.com/q/281415/9075) — Gallery of elegantly typeset invitations.
-- [Programming Your Document](https://tex.stackexchange.com/q/219774/9075) — Examples treating LaTeX as a programming language.
 - [TUG TeX Showcase](https://www.tug.org/texshowcase/) — Official showcase from the TeX Users Group.
 - [Awesome LaTeX Drawing](https://github.com/xinychen/awesome-latex-drawing) — Curated collection of academic illustrations made with LaTeX.
 
@@ -289,7 +285,7 @@ The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly wit
 - [The (Not So) Short Introduction to LaTeX2e](https://mirrors.ctan.org/info/lshort/english/lshort.pdf) — The classic deep-dive introduction (PDF).
 - [Begin LaTeX in minutes](https://github.com/luong-komorebi/Begin-Latex-in-minutes) — Quick-start guide for absolute beginners.
 - [Getting to Grips with LaTeX](https://www.andy-roberts.net/writing/latex) — Thorough walkthrough of most LaTeX features you'll need.
-- [LaTeX intros in other languages](https://tex.stackexchange.com/questions/84384/latex-introductions-in-languages-other-than-english/84385) — Beginner guides in many languages.
+- [Typst for LaTeX users](https://typst.app/docs/guides/for-latex-users/) — Official migration guide if you're considering Typst.
 
 ## Essential Reading
 
@@ -309,10 +305,8 @@ The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly wit
 
 ## Community Hubs
 
-- [LinkedIn: TeX/LaTeX User Group](https://www.linkedin.com/groups/1600297)
-- [Twitter: @TeXtip](https://twitter.com/TeXtip) — Bite-sized LaTeX tips from [John D. Cook](https://www.johndcook.com/).
-- [TeX.StackExchange](https://tex.stackexchange.com) — The premier Q&A site for all things TeX.
 - [TopAnswers TeX](https://topanswers.xyz/tex) — Open-source Q&A platform for TeX questions.
+- [LinkedIn: TeX/LaTeX User Group](https://www.linkedin.com/groups/1600297)
 
 ---
 
