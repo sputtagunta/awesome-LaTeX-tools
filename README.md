@@ -210,12 +210,15 @@ Draw diagrams and figures with LaTeX-native output.
 
 ### Cross-References
 
+- [hyperref](https://www.ctan.org/pkg/hyperref) — The essential package for clickable cross-references, internal links, and PDF metadata. Load it last in your preamble.
+- [cleveref](https://www.ctan.org/pkg/cleveref) — Smarter referencing: `\cref{fig:example}` automatically prepends "Figure", "Table", "Equation", etc. — and handles plural forms too.
+- [varioref](https://www.ctan.org/pkg/varioref) — Adds contextual page references: `\vref{sec:intro}` outputs "Section 2 on page 5" or "on the next page" as appropriate.
 
 ### Tables & Tabular Data
 
 - [Tables Generator](https://www.tablesgenerator.com) — Visual web app: design your table, copy out the LaTeX (or Markdown, or HTML).
 - [Excel2LaTeX](https://www.ctan.org/pkg/excel2latex?lang=en) — Macro that converts Excel spreadsheets into LaTeX `tabular` code.
-- [csv2latex](http://freshmeat.sourceforge.net/projects/csv2latex) — CLI tool that transforms CSV files into LaTeX tables.
+- [csv2latex](https://www.ctan.org/pkg/csv2latex) — Script that converts clipboard spreadsheet data (Excel, LibreOffice, Numbers) into LaTeX table code. Works with plain tables, booktabs, longtable, and raw cells.
 - [pgfplotstable](https://www.ctan.org/pkg/pgfplotstable?lang=en) — Package for rendering data tables with configurable formatting — reads CSV natively.
 
 ### Figures & Diagrams
