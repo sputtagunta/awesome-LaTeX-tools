@@ -242,7 +242,8 @@ The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly wit
 
 ### Code Listings
 
-- [minted](https://www.ctan.org/pkg/minted) — Syntax-highlighted code listings powered by [Pygments](https://pygments.org/), supporting 300+ languages.
+- [listings](https://www.ctan.org/pkg/listings) — The workhorse package for typesetting source code. Ships with every TeX distribution, no external dependencies. Configurable keyword colors, frames, and captions.
+- [minted](https://www.ctan.org/pkg/minted) — Syntax-highlighted code listings powered by [Pygments](https://pygments.org/), supporting 300+ languages. Requires Python and `--shell-escape`.
 
 ### Typographic Refinement
 
@@ -250,6 +251,7 @@ The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly wit
 
 ### Slide Decks & Presentations
 
+- [Beamer](https://www.ctan.org/pkg/beamer) ([GitHub](https://github.com/josephwright/beamer)) — The standard LaTeX framework for presentations. Supports themes, overlays, animations, and speaker notes. Works with pdflatex, XeLaTeX, and LuaLaTeX.
 - [nics](https://nics.nilcons.com/) — An opinionated Beamer alternative that prioritizes beautiful defaults and simplicity. Excellent docs and cheatsheet.
 
 ## Starter Templates
