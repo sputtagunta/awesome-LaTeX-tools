@@ -20,6 +20,8 @@ Whether you're drafting a dissertation, preparing a conference paper, or typeset
 - [Compilation & Build Automation](#compilation--build-automation)
   - [CI/CD for LaTeX](#cicd-for-latex)
 - [Utilities & Helpers](#utilities--helpers)
+  - [Linting & Quality Checks](#linting--quality-checks)
+  - [Equation-Focused Tools](#equation-focused-tools)
 - [Visual & GUI Tools for LaTeX](#visual--gui-tools-for-latex)
 - [Package Ecosystem](#package-ecosystem)
   - [Cross-References](#cross-references)
