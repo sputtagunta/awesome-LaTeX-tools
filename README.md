@@ -229,6 +229,13 @@ Draw diagrams and figures with LaTeX-native output.
 
 A mature library for generating publication-quality figures within PostScript and DVI workflows.
 
+- [PSTricks home](https://tug.org/PSTricks/main.cgi/) — Official portal with documentation, examples, and mailing-list archive.
+- [pstricks-add](https://www.ctan.org/pkg/pstricks-add) — Collection of add-ons extending PSTricks with additional plotting and drawing commands.
+- [pst-plot](https://www.ctan.org/pkg/pst-plot) — Plots functions and data files with high-quality PostScript curves.
+- [pst-pdf](https://www.ctan.org/pkg/pst-pdf) — Converts PSTricks output to PDF-compatible form so you can use PSTricks with pdflatex.
+- [PSTricks Gallery (TeXample)](https://www.texample.net/tikz/examples/tag/pstricks/) — Community-contributed PSTricks examples with source code.
+- [PSTricks examples book (Herbert Voß)](https://www.pstricks.de/PostScript/) — Extensive collection of worked examples by the PSTricks maintainer.
+
 #### TikZ & PGF
 
 The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly with `pdflatex`.
