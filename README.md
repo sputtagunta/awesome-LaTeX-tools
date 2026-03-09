@@ -312,14 +312,19 @@ The dominant LaTeX graphics package. Rich plugin ecosystem, works seamlessly wit
 
 ## Blogs & Newsletters
 
+- [Overleaf Blog](https://www.overleaf.com/blog) — The most widely read LaTeX blog; tutorials, how-tos, collaboration features, and deep dives into packages and workflows.
 - [TeXblog](https://texblog.net) — Long-running blog covering LaTeX tips and techniques.
 - [texblog.org](https://texblog.org) — Tutorials, package spotlights, and code snippets.
 - [TeX Talk](https://tex-talk.net) — News and interviews from the TeX Stack Exchange community.
 - [TeX Hour](https://texhour.github.io/) — Weekly video meetup for the TeX community.
+- [The PracTeX Journal](https://tug.org/pracjourn/index.html) — Practitioner-focused articles from TUG on real-world LaTeX workflows (archived, still highly readable).
 
 ## Community Hubs
 
+- [TeX Stack Exchange](https://tex.stackexchange.com) — The definitive Q&A community for LaTeX, with 250 000+ answered questions covering every package, error message, and workflow. If it compiles, it's been asked here.
+- [Reddit r/LaTeX](https://www.reddit.com/r/LaTeX/) — 100 000+ member community for questions, project showcases, and discussion about LaTeX tooling and techniques.
 - [TopAnswers TeX](https://topanswers.xyz/tex) — Open-source Q&A platform for TeX questions.
+- [LaTeX Discord Server](https://discord.gg/Kzz3e2H) — Real-time help channel; active core of volunteers who answer beginner and advanced questions.
 - [LinkedIn: TeX/LaTeX User Group](https://www.linkedin.com/groups/1600297)
 
 ---
