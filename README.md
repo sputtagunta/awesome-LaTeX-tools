@@ -17,6 +17,8 @@ Whether you're drafting a dissertation, preparing a conference paper, or typeset
   - [Multipurpose Code Editors](#multipurpose-code-editors)
   - [Browser-Based Editors](#browser-based-editors)
 - [Citation & Bibliography Management](#citation--bibliography-management)
+  - [LaTeX-Side Bibliography](#latex-side-bibliography)
+  - [Reference Managers](#reference-managers)
 - [Compilation & Build Automation](#compilation--build-automation)
   - [CI/CD for LaTeX](#cicd-for-latex)
 - [Utilities & Helpers](#utilities--helpers)
@@ -51,7 +53,7 @@ Your first step is installing a TeX distribution — it bundles the compiler, fo
 
 - [MacTeX](https://tug.org/mactex/) — The go-to distribution for macOS users. Ships TeXLive core plus Mac-native utilities.
 - [TeX Live](https://www.tug.org/texlive/) — The standard distribution across Linux and Unix systems. Also runs on Windows.
-- [MikTeX](https://miktex.org) — A popular choice on Windows with on-the-fly package installation. Cross-platform builds exist for Mac and Linux too.
+- [MiKTeX](https://miktex.org) — A popular choice on Windows with on-the-fly package installation. Cross-platform builds exist for Mac and Linux too.
 
 ## Containerized Environments
 
@@ -81,7 +83,7 @@ Tools that reimagine scientific typesetting beyond the traditional TeX workflow.
 Render LaTeX-quality equations outside of PDF.
 
 - [MathJax](https://www.mathjax.org) — The gold-standard JavaScript library for rendering math in browsers. Crisp output everywhere.
-- [KaTeX](https://khan.github.io/KaTeX/) — Khan Academy's lightning-fast math renderer. Outputs pure HTML — no images.
+- [KaTeX](https://katex.org/) — Khan Academy's lightning-fast math renderer. Outputs pure HTML — no images.
 - [Auto-LaTeX Equations with Google Docs](https://sites.google.com/site/autolatexequations) — Drop high-fidelity math equations straight into Google Docs.
 - [Franklin.jl](https://franklinjl.org/) — Julia-powered static site generator with native KaTeX, code evaluation, and LaTeX-like commands.
 - [xhub](https://github.com/nschloe/xhub) — Browser extension that activates LaTeX rendering on GitHub pages.
@@ -150,6 +152,16 @@ Write and compile from any device with a browser.
 ## Citation & Bibliography Management
 
 Taming your references so you don't have to.
+
+### LaTeX-Side Bibliography
+
+The in-document machinery that formats citations and reference lists.
+
+- [biblatex](https://www.ctan.org/pkg/biblatex) ([GitHub](https://github.com/plk/biblatex)) — The modern replacement for the old `natbib`/`cite` approach. Richly configurable citation styles (authoryear, numeric, APA, Chicago, verbose-ibid, and more), full Unicode support, and a clean Lua/LaTeX API for style authors. Recommended for any new project.
+- [biber](https://github.com/plk/biber) — The modern backend for biblatex, replacing BibTeX. Handles Unicode author names (no more accented-character workarounds), sophisticated sorting, cross-references, and remote source data. Ships with TeX Live, MiKTeX, and MacTeX — just add `\usepackage[backend=biber]{biblatex}`.
+- [natbib](https://www.ctan.org/pkg/natbib) — The classic author–year/numeric citation package. Still required by many journal submission templates that haven't migrated to biblatex.
+
+### Reference Managers
 
 - [Zotero](https://www.zotero.org) — Captures references from your browser, syncs across devices, and exports to BibTeX. The most popular free option.
 - [JabRef](https://www.jabref.org) — Powerful open-source BibTeX manager. Runs everywhere Java does.
