@@ -51,7 +51,7 @@ Your first step is installing a TeX distribution — it bundles the compiler, fo
 
 - [MacTeX](https://tug.org/mactex/) — The go-to distribution for macOS users. Ships TeXLive core plus Mac-native utilities.
 - [TeX Live](https://www.tug.org/texlive/) — The standard distribution across Linux and Unix systems. Also runs on Windows.
-- [MikTeX](https://miktex.org) — A popular choice on Windows with on-the-fly package installation. Cross-platform builds exist for Mac and Linux too.
+- [MiKTeX](https://miktex.org) — A popular choice on Windows with on-the-fly package installation. Cross-platform builds exist for Mac and Linux too.
 
 ## Containerized Environments
 
@@ -81,7 +81,7 @@ Tools that reimagine scientific typesetting beyond the traditional TeX workflow.
 Render LaTeX-quality equations outside of PDF.
 
 - [MathJax](https://www.mathjax.org) — The gold-standard JavaScript library for rendering math in browsers. Crisp output everywhere.
-- [KaTeX](https://khan.github.io/KaTeX/) — Khan Academy's lightning-fast math renderer. Outputs pure HTML — no images.
+- [KaTeX](https://katex.org/) — Khan Academy's lightning-fast math renderer. Outputs pure HTML — no images.
 - [Auto-LaTeX Equations with Google Docs](https://sites.google.com/site/autolatexequations) — Drop high-fidelity math equations straight into Google Docs.
 - [Franklin.jl](https://franklinjl.org/) — Julia-powered static site generator with native KaTeX, code evaluation, and LaTeX-like commands.
 - [xhub](https://github.com/nschloe/xhub) — Browser extension that activates LaTeX rendering on GitHub pages.
